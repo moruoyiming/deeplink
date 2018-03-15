@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/c_white"
+    android:background="@color/c_blue_1"
     android:gravity="center"
     tools:ignore="HardcodedText">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MainActivity"
+        android:text="Page2"
         android:textSize="24sp"
         android:textStyle="bold" />
 
