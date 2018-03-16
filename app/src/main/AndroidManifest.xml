@@ -7,6 +7,14 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
 
+        <!--<meta-data-->
+        <!--android:name="asset_statements"-->
+        <!--android:resource="@string/asset_statements" />-->
+
+        <meta-data
+            android:name="asset_statements"
+            android:resource="@string/asset_statements" />
+
         <activity
             android:name=".activity.MainActivity"
             android:screenOrientation="portrait">
@@ -22,6 +30,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
+
+            <!-- this is config for deep link-->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -29,9 +39,27 @@
                 <category android:name="android.intent.category.DEFAULT" />
 
                 <data
-                    android:host="onh41rnsc.bkt.clouddn.com"
+                    android:host="p5ml3g4x2.bkt.clouddn.com"
                     android:scheme="app" />
             </intent-filter>
+
+
+            <!-- for APP Link-->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="o18dxim1q.qnssl.com"
+                    android:scheme="http"
+                    />
+                <data
+                    android:scheme="https"
+                    />
+            </intent-filter>
+
         </activity>
 
         <activity
