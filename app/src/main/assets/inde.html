@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>测试</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    </head>
+    <body>
+    <div></div>
+    <script>
+    var url_ios = "Cgtz://songjiangdai"   //ios打开链接
+    var url_ios_download=  "https://itunes.apple.com/cn/app/song-jiang-dai/id984424855?mt=8" //ios下载地址
+    var url_android = "qzdxs://com.kyb.com" //安卓打卡链接
+    var url_android_download = "https://cgtzfiles.b0.upaiyun.com//cgjr/jrwx/apk/songjiangdai_release_2.2.2_dx.apk"//安卓下载地址
+    if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)){  //判断ios手机
+        var loadTime = new Date();
+          window.location.href=url_ios   //打开手机内的app
+        setTimeout(function(){   //两秒后下载APP
+            var outTime = new Date()
+            if(outTime - loadTime > 800){
+                location.href = url_ios_download;
+            }
+        },2000)
+    }else { //安卓手机
+        var loadTime = new Date();
+        location.href = url_android;//打开手机内的app
+        setTimeout(function(){  //两秒后下载APP
+            var outTime = new Date()
+            if(outTime - loadTime > 800){
+                location.href = url_android_download;
+            }
+        },2000)
+    }
+        </script>
+    </body>
+</html>

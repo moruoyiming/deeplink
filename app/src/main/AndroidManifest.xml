@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.qw.applink"
-          xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qw.applink">
 
     <application
         android:icon="@mipmap/ic_launcher"
@@ -17,8 +17,7 @@
 
         <activity
             android:name=".activity.MainActivity"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait"></activity>
 
         <activity
             android:name=".activity.WelcomeActivity"
@@ -53,11 +52,11 @@
 
                 <data
                     android:host="o18dxim1q.qnssl.com"
-                    android:scheme="http"
-                    />
+                    android:scheme="http" />
                 <data
-                    android:scheme="https"
-                    />
+                    android:host="com.kyb.com"
+                    android:scheme="qzdxs" />
+                <data android:scheme="https" />
             </intent-filter>
 
         </activity>
